@@ -1,0 +1,37 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "description": "banana",
+            "lastSold": "2/28/2019",
+            "shelfLife": "4d",
+            "department": "Produce",
+            "price": "$2.99",
+            "unit": "lb",
+            "xFor": "1",
+            "cost": "0.44"
+        },
+        {
+            "id": 2,
+            "description": "headache-gone",
+            "lastSold": "2/11/2019",
+            "shelfLife": "365d",
+            "department": "Pharmacy",
+            "price": "$1.99",
+            "unit": "Each",
+            "xFor": "1",
+            "cost": "0.90"
+        },
+        {
+            "id": 100,
+            "description": "soft-mattress",
+            "lastSold": "11/30/2018",
+            "shelfLife": "365d",
+            "department": "Furnishing",
+            "price": "$890.99",
+            "unit": "Each",
+            "xFor": "1",
+            "cost": "890.99"
+        }
+    ]
+}
