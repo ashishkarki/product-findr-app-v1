@@ -8,8 +8,8 @@
             "department": "Produce",
             "price": "$2.99",
             "unit": "lb",
-            "xFor": "1",
-            "cost": "0.44"
+            "xFor": 1,
+            "cost": "$0.44"
         },
         {
             "id": 2,
@@ -19,8 +19,8 @@
             "department": "Pharmacy",
             "price": "$1.99",
             "unit": "Each",
-            "xFor": "1",
-            "cost": "0.90"
+            "xFor": 1,
+            "cost": "$0.90"
         },
         {
             "id": 100,
@@ -30,8 +30,8 @@
             "department": "Furnishing",
             "price": "$890.99",
             "unit": "Each",
-            "xFor": "1",
-            "cost": "890.99"
+            "xFor": 1,
+            "cost": "$890.99"
         }
     ]
 }
