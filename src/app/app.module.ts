@@ -1,3 +1,4 @@
+import { CustomNgMaterialModule } from './custom-ng-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -11,6 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductMatTableComponent } from './components/product-mat-table/product-mat-table.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { AboutComponent } from './components/about/about.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ProductMatTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    CustomNgMaterialModule
   ],
   providers: [RestApiService],
   bootstrap: [AppComponent]

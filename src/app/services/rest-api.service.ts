@@ -21,7 +21,7 @@ export class RestApiService {
     return this.getProductsRequest(this.jsonServerUrl + '/products');
   }
 
-  getSearchProducts(searchText: string): Observable<Product[]> {
+  getSearchedProducts(searchText: string): Observable<Product[]> {
     return this.getProductsRequest(this.jsonServerUrl + '/products?q=' + searchText.trim());
   }
 

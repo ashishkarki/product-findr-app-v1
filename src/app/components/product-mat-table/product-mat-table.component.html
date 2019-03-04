@@ -1,0 +1,49 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> Description </th>
+      <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastSold">
+      <th mat-header-cell *matHeaderCellDef> Last Sold </th>
+      <td mat-cell *matCellDef="let element"> {{element.lastSold}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="shelfLife">
+      <th mat-header-cell *matHeaderCellDef> Shelf Life </th>
+      <td mat-cell *matCellDef="let element"> {{element.shelfLife}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="department">
+      <th mat-header-cell *matHeaderCellDef> Department </th>
+      <td mat-cell *matCellDef="let element"> {{element.department}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef> Price </th>
+      <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="unit">
+      <th mat-header-cell *matHeaderCellDef> Unit </th>
+      <td mat-cell *matCellDef="let element"> {{element.unit}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="xFor">
+      <th mat-header-cell *matHeaderCellDef> X For </th>
+      <td mat-cell *matCellDef="let element"> {{element.xFor}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="cost">
+      <th mat-header-cell *matHeaderCellDef> Cost </th>
+      <td mat-cell *matCellDef="let element"> {{element.cost}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </mat-table>

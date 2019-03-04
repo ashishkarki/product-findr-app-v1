@@ -3,21 +3,6 @@
   <input type="text" id="search" [(ngModel)]="searchText" (click)="searchText = ''">
   <button class="btn btn-info" (click)="onSearchButtonClicked()">Click to search</button>
 
-  <br>
-  <hr>
-  Displaying list of searched products
-  <div class="well">
-    <ul *ngFor="let product of searchedProducts">
-      <li>{{ product.id }}, {{ product.description }}</li>
-    </ul>
-  </div>
-
-  <br>
-  <hr>
-  Displaying list of all products
-  <div class="well">
-    <ul *ngFor="let product of products">
-      <li>{{ product.id }}, {{ product.description }}</li>
-    </ul>
-  </div>
+  <app-product-mat-table [displayedColumns]="displayedColumns" [dataSource]="searchedProducts">
+  </app-product-mat-table>
 </div>
