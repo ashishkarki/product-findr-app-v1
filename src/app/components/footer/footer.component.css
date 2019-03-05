@@ -1,4 +1,12 @@
 .app-footer {
     color: rgb(255, 255, 255);
     background-color: rgb(52, 58, 64);
+    
+    /* reference: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    text-align: center;
 }
