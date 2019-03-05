@@ -8,9 +8,10 @@ import { RestApiService } from 'src/app/services/rest-api.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  products: Product[];
+  
   searchedProducts: Product[];
   searchText = 'type your search text here';
+  displayedColumns = ['id', 'description', 'lastSold', 'shelfLife', 'department', 'price', 'unit', 'xFor', 'cost'];
 
   constructor(private restApiService: RestApiService) { }
 
@@ -19,14 +20,14 @@ export class ProductListComponent implements OnInit {
   }
 
   onSearchButtonClicked() {
-    this.restApiService.getSearchProducts(this.searchText).subscribe(searchedProducts => {
+    this.restApiService.getSearchedProducts(this.searchText).subscribe(searchedProducts => {
       this.searchedProducts = searchedProducts;
     });
   }
 
   private getAllProducts() {
     this.restApiService.getAllProducts().subscribe(products => {
-      this.products = products;
+      this.searchedProducts = products;
     });
   }
 }

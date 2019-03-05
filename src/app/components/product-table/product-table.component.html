@@ -1,0 +1,29 @@
+<!-- <div class="container"> -->
+  <h2>Displaying a list of products</h2>
+  <p>You can search above to filter the results below:</p>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th *ngFor="let header of displayedColumns">
+            {{ header }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of dataSource">
+          <td>{{ row.id }}</td>
+          <td>{{ row.description }}</td>
+          <td>{{ row.lastSold }}</td>
+          <td>{{ row.shelfLife }}</td>
+          <td>{{ row.department }}</td>
+          <td>{{ row.price }}</td>
+          <td>{{ row.unit }}</td>
+          <td>{{ row.xFor }}</td>
+          <td>{{ row.cost }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<!-- </div> -->
