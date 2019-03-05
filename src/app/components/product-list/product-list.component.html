@@ -2,6 +2,10 @@
   <label for="search">Type your search in this box, then click the button:</label>
   <input type="text" id="search" [(ngModel)]="searchText" (click)="searchText = ''">
   <button class="btn btn-info" (click)="onSearchButtonClicked()">Click to search</button>
+  <br><hr>
+
+  <app-search (searchTextChange)="onSearchAction($event)"></app-search>
+  searchText: {{ searchText }}
 
   <app-product-table [displayedColumns]="displayedColumns" [dataSource]="searchedProducts"></app-product-table>
 

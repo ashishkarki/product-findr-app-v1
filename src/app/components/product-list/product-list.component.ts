@@ -19,8 +19,8 @@ export class ProductListComponent implements OnInit {
     this.getAllProducts();
   }
 
-  onSearchButtonClicked() {
-    this.restApiService.getSearchedProducts(this.searchText).subscribe(searchedProducts => {
+  onSearchAction(searchText: string) {
+    this.restApiService.getSearchedProducts(searchText).subscribe(searchedProducts => {
       this.searchedProducts = searchedProducts;
     });
   }
