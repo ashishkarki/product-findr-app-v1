@@ -1,11 +1,8 @@
 <div class="container">
-  <label for="search">Type your search in this box, then click the button:</label>
-  <input type="text" id="search" [(ngModel)]="searchText" (click)="searchText = ''">
-  <button class="btn btn-info" (click)="onSearchButtonClicked()">Click to search</button>
-  <br><hr>
+  <h2>Displaying a list of products</h2>
+  <p>Search in the box below and press enter to filter the results</p>
 
   <app-search (searchTextChange)="onSearchAction($event)"></app-search>
-  searchText: {{ searchText }}
 
   <app-product-table [displayedColumns]="displayedColumns" [dataSource]="searchedProducts"></app-product-table>
 
